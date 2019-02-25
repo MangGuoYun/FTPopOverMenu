@@ -138,7 +138,7 @@ typedef NS_ENUM(NSUInteger, FTPopOverMenuArrowDirection) {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
         [self setupWithMenuName:menuName menuImage:menuImage selected:selected configuration:configuration];
     }
     return self;
